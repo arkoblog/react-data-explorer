@@ -10,7 +10,7 @@ var Home = React.createClass({
 					
 					<div className="jumbotron">
 						<Link to='/'>
-							<button type='button' className='pull-right btn btn-large btn-warning'>Back to home</button>
+							<button type='button' className='pull-right btn btn-large btn-danger'>Back to home</button>
 						</Link>
 						<h1>Aggregate and View</h1>
 						<p className="link">Aggregate and visualize </p>

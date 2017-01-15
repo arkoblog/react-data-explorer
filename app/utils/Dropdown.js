@@ -36,7 +36,6 @@ var Dropdown = React.createClass({
 				</label>
 		        <input type="submit" value="Submit" /> 
 		      </form>
-		      <hr/>
 			</div>
 			</div>
 		)

@@ -56,7 +56,7 @@ d3Chart._drawPoints = function(el, scales, data) {
   // ENTER
   bar.enter().append('rect')  
       .attr('class', 'd3-bar')
-      .style("fill", "#6beca4");
+      .style("fill", "steelblue ");
 
   // console.log("Hey Baby",scales.x.rangeBand())
   // ENTER & UPDATE

@@ -8,7 +8,7 @@ var Maps = React.createClass({
 				<div className="row">
 					<div className="jumbotron">
 						<Link to='/'>
-							<button type='button' className='pull-right btn btn-large btn-warning'>Back to home</button>
+							<button type='button' className='pull-right btn btn-large btn-danger'>Back to home</button>
 						</Link>
 						<h1>Maps</h1>
 						<p className="link">Leaflet based maps!</p>

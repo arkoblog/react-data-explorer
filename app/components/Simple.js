@@ -1,6 +1,7 @@
 var React = require('react');
 var ReactRouter = require('react-router');
 var Link=ReactRouter.Link;
+var styles = require('../styles/index')
 var d3Loaders = require('../utils/d3Loaders')
 var Puker = require('../utils/Puker')
 var dropdown = require('../utils/Dropdown')
@@ -44,13 +45,13 @@ var Simple = React.createClass({
 				<div className="row">
 					<div className="jumbotron">
 						<Link to='/'>
-							<button type='button' className='pull-right btn btn-large btn-warning'>Back to home</button>
+							<button type='button' className='pull-right btn btn-large btn-danger'>Back to home</button>
 						</Link>
 						<h1>Simple load and view!</h1>
 						<p className="link">Simple analysis and visualization module</p>
 					</div>
 					
-					<div className="jumbotron">
+					<div className="jumbotron" style = {styles.transparentBg}>
 						<h4>This is where my content stays!</h4>
 						<dropdown.renderdropdown headers = {this.state.columnHeaders} updateDataFunction={this.updateData} selectedYVal="value2"/>
 						<Chart data={this.state.rawData} domain={this.state.domain} type="Bar"/>
