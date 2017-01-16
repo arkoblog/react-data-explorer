@@ -7,7 +7,7 @@ var c3 = require('c3');
 //   ['Your Numbers', 50, 20, 10, 40, 15, 25]
 // ];
 
-var c3Chart = React.createClass({
+var LineAreaBar = React.createClass({
   componentDidMount: function() {
     this._updateChart();
   },
@@ -15,7 +15,7 @@ var c3Chart = React.createClass({
     this._updateChart();
   },
   _updateChart: function() {
-    console.log("MyColumns", this.props.columns[0])
+    // console.log("MyColumns", this.props.columns[0])
      chart = c3.generate({
       bindto: '#chart',
       data: {
@@ -42,43 +42,52 @@ var c3Chart = React.createClass({
   }
 });
 
+var Scatter = React.createClass({
+  componentDidMount: function() {
+    this._updateChart();
+  },
+  componentDidUpdate: function() {
+    this._updateChart();
+  },
+  _updateChart: function() {
+    console.log("MyColumns", this.props.columns)
+     chart = c3.generate({
+      bindto: '#'+this.props.id,
+      data: {
+        x: this.props.columns[0][0],
+        columns: this.props.columns,
+        type: 'scatter',
+        labels:{
+//            format: function (v, id, i, j) { return "Default Format"; },
+            format: function(v,id,i,j){
+               return d3.round(v,2);
+//                data1: function (v, id, i, j) { return "Format for data1"; },
+            }
+        }
+      },
+      point: {
+         r: 10
+      },
+      axis: {
+          x: {
+              label: this.props.columns[0][0],
+              tick: {
+                  fit: false
+              }
+          },
+          y: {
+              label: this.props.columns[1][0]
+          }
+      }
+    });
+  },
+  render() {
+    return <div id={this.props.id}></div>;    
+  }
+});
 
 
-// class App extends Component {
-//   constructor(props) {
-//     super(props);
-//     this._setBarChart = this._setBarChart.bind(this);
-//     this._setLineChart = this._setLineChart.bind(this);
-//     this.state = {
-//       chartType: 'line'
-//     };
-//   }
-//   _setBarChart() {
-//     this.setState({ chartType: 'bar' });
-//   }
-//   _setLineChart() {
-//     this.setState({ chartType: 'line' });
-//   }
-//   render() {
-//     return (
-//       <div className="app-wrap">
-//         <Chart 
-//           columns={columns}
-//           chartType={this.state.chartType} />
-//         <p>
-//           Chart Type
-//           <button onClick={this._setBarChart}>bar</button> 
-//           <button onClick={this._setLineChart}>Line</button>
-//         </p>
-//       </div>
-//     );
-//   }
-// }
-// })
-
-// ReactDOM.render(
-// 	<App />,
-//     document.getElementById('app')
-// );
-
-module.exports=c3Chart;
+module.exports={
+  LineAreaBar : LineAreaBar,
+  Scatter: Scatter
+};

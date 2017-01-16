@@ -64,66 +64,8 @@ var Categorical = React.createClass({
 });
 
 
-var Numerical = React.createClass({
-	getInitialState: function() {
-		return{
-			selected1: 2,
-			selected2: 3,
-			numvar1:this.props.selectedOne,
-			numvar2: this.props.selectedTwo
-		}
-	},
-    handleChangeOne: function(event){
-    	console.log("Hi My")
-    	// var selectedVar = (this.props.headers[event.target.value]);
-        this.setState({selected1: event.target.value});	
-    },
-    handleChangeTwo: function(event){
-    	console.log("Hi")
-        this.setState({selected1: event.target.value});	
-    	
-    	// var selectedVar = (this.props.headers[event.target.value]);
-        // this.setState({numvar2: selectedVar});	
-    },
-    handleSubmitTwo: function (event) {
-    		// event.preventDefault();
-    		// console.log("submitted",this.state.numvar1, this.state.numvar2);
-            // this.props.updateDataFunction(this.state.numvar1, this.state.numvar2);	
-    },
-	render: function() {
-		// console.log("Hi",this.state.numvar1)
-		return (
-				<div className="row">
-					<form onSubmit={this.handleSubmitTwo}>
-			  			<div className="col-md-3">
-				        <label>
-				        	<select onChange={this.handleChangeOne} value={this.state.selected1}>
-				           		{this.props.headers.map(function(listValue, i){
-				            			return <option   value={i} key={i} >{listValue.toUpperCase()}</option>;
-				          		}.bind(this))}
-							</select> 
-						</label>
-					</div>					
-
-					<div className="col-md-3">
-				        <label>
-				        	<select onChange={this.handleChangeTwo} value={this.state.selected2}>
-				           		{this.props.headers.map(function(listValue, i){
-				            			return <option  value={i} key={i} >{listValue.toUpperCase()}</option>;
-				          		}.bind(this))}
-							</select> 
-						</label>
-					</div>					
-
-		        		<input className="btn btn-large btn-success pull-right "type="submit" value="Submit" />
-					</form>
-				</div>
-		)}
-})
-
 
 module.exports = {
 	getColumnHeaders: getColumnHeaders,
-	Categorical: Categorical, 
-	Numerical: Numerical 
+	Categorical: Categorical
 }

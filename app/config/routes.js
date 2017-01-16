@@ -8,7 +8,8 @@ var hashHistory = ReactRouter.hashHistory;
 
 var Main = require('../components/Main')
 var Home = require('../components/Home')
-var Simple = require('../components/Simple')
+var Categorical = require('../components/Categorical')
+var Numerical = require('../components/Numerical')
 var Aggregate = require('../components/Aggregate')
 var Maps = require('../components/Maps')
 
@@ -16,7 +17,8 @@ var routes = (
 	<Router history={hashHistory}>
 		<Route path='/' component = {Main}>
 			<IndexRoute component={Home}/>
-			<Route path = '/simple' component = {Simple}/>
+			<Route path = '/categorical' component = {Categorical}/>
+			<Route path = '/numerical' component = {Numerical}/>
 			<Route path = '/aggregate' component = {Aggregate}/>
 			<Route path = '/leaflet' component = {Maps}/>
 		</Route>

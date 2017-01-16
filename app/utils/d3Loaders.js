@@ -2,7 +2,7 @@ var React = require('react');
 var d3 = require('d3');
 var _ = require('lodash');
 
-var csvLoader = function(url, xvar, yvar, storedata, c3ord3) {
+var catCSVLoader = function(url, xvar, yvar, storedata, c3ord3) {
 	 d3.csv(url)
 	  .row(function(d){
 		if (!d[xvar]) {return null;}       			
@@ -20,6 +20,45 @@ var csvLoader = function(url, xvar, yvar, storedata, c3ord3) {
 				// console.log("hi hi hi")
 					xaxis=[];
 					yaxis=['yaxis'];
+					
+					data.map(function(item){
+						xaxis.push(item.xvar)
+					});
+
+				data.map(function(item){
+					yaxis.push(item.yvar)
+				});
+
+				var c3Data = [xaxis,yaxis]
+				storedata(c3Data);
+
+			} else {
+				storedata(data)
+			}
+		}})
+
+	// console.log("Arogy",window.data);  
+	  
+};
+
+var numCSVLoader = function(url, xvar, yvar, storedata, c3ord3) {
+	 d3.csv(url)
+	  .row(function(d){
+		if (!d[xvar]) {return null;}       			
+		return {
+			xvar: Number(d[xvar]),
+          	yvar: Number(d[yvar])
+		}})
+	  .get(function(error,rows){
+		if(error){
+			console.error("Error",error);
+		} else {
+			var data = rows;
+			// window.data = data;
+			if (c3ord3=='c3'){
+				// console.log("hi hi hi")
+					xaxis=[xvar];
+					yaxis=[yvar];
 					
 					data.map(function(item){
 						xaxis.push(item.xvar)
@@ -62,6 +101,7 @@ var domainCalculator = function(data, xvar, yvar){
 
 
 module.exports= {
-	csvLoader: csvLoader,
+	catCSVLoader: catCSVLoader,
+	numCSVLoader: numCSVLoader,
 	domainCalculator: domainCalculator
 }
