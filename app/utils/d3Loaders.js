@@ -2,7 +2,7 @@ var React = require('react');
 var d3 = require('d3');
 var _ = require('lodash');
 
-var csvLoader = function(url, xvar, yvar, storedata) {
+var csvLoader = function(url, xvar, yvar, storedata, c3ord3) {
 	 d3.csv(url)
 	  .row(function(d){
 		if (!d[xvar]) {return null;}       			
@@ -16,7 +16,25 @@ var csvLoader = function(url, xvar, yvar, storedata) {
 		} else {
 			var data = rows;
 			// window.data = data;
-			storedata(data)
+			if (c3ord3=='c3'){
+				// console.log("hi hi hi")
+					xaxis=[];
+					yaxis=['yaxis'];
+					
+					data.map(function(item){
+						xaxis.push(item.xvar)
+					});
+
+				data.map(function(item){
+					yaxis.push(item.yvar)
+				});
+
+				var c3Data = [xaxis,yaxis]
+				storedata(c3Data);
+
+			} else {
+				storedata(data)
+			}
 		}})
 
 	// console.log("Arogy",window.data);  

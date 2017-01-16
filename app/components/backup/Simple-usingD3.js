@@ -5,33 +5,39 @@ var styles = require('../styles/index')
 var d3Loaders = require('../utils/d3Loaders')
 var Puker = require('../utils/Puker')
 var dropdown = require('../utils/Dropdown')
-var C3Chart = require('../utils/c3Chart')
-require('../styles/c3ChartStyles.css')
+var Chart = require('../utils/Chart');
+var CChart = require('../utils/c3Chart')
+
+var columns = [
+  ['My Numbers', 30, 200, 100, 400, 150, 250],
+  ['Your Numbers', 50, 20, 10, 40, 15, 25]
+];
+
 
 var Simple = React.createClass({
 	getInitialState: function() {
 		return {
 			rawData: [],
 			domain: [],
-			columnHeaders: [],
-			chartType: 'bar'
+			columnHeaders: []
 		}
 	},
 	setChartData: function(rawData) {
-		console.log("MyRawData",rawData)
-		// var domain = d3Loaders.domainCalculator(rawData, "xvar", "yvar")
-		this.setState({rawData: rawData})
+		var domain = d3Loaders.domainCalculator(rawData, "xvar", "yvar")
+		// console.log(domain)
+		this.setState({rawData: rawData, domain:domain})
 
 	},
 	setDropDownData: function(columnHeaders) {
+		// console.log("ColumnHeaders", columnHeaders);
 		this.setState({columnHeaders:columnHeaders, updateData:this.updateData })
 	},
-	updateData: function(selectedHeader, selectedChartType) {
-			this.setState({chartType: selectedChartType})
-			d3Loaders.csvLoader("data/dummy.csv", "var", selectedHeader, this.setChartData,'c3');
+	updateData: function(selectedHeader) {
+			// this.setState({selectedColumn: selectedHeader})
+			d3Loaders.csvLoader("data/dummy.csv", "var", selectedHeader, this.setChartData);
 	},
 	componentWillMount: function() {
-		d3Loaders.csvLoader("data/dummy.csv", "var", "value2", this.setChartData,'c3');
+		d3Loaders.csvLoader("data/dummy.csv", "var", "value2", this.setChartData);
 		dropdown.getColumnHeaders("data/dummy.csv", this.setDropDownData)
 	},
 	componentDidMount: function() {
@@ -40,8 +46,7 @@ var Simple = React.createClass({
 	render: function(){
 		// d3Loaders.csvLoader("data/dummy.csv","var","value2", this.getdata)
 		// console.log("Myarog",arogya);
-		console.log("My state",this.state)
-		var radiovals = ['line','bar'];
+		// console.log("My state",this.state)
 		return(
 				<div className="row">
 					<div className="jumbotron">
@@ -54,9 +59,9 @@ var Simple = React.createClass({
 					
 					<div className="jumbotron" style = {styles.transparentBg}>
 						<h4>This is where my content stays!</h4>
-						<dropdown.renderdropdown  selectedradiovar='bar'  radiovals = {radiovals} headers = {this.state.columnHeaders} updateDataFunction={this.updateData} selectedYVal="value2"/>
-						{/*<Chart data={this.state.rawData} domain={this.state.domain} type="Bar"/>*/}
-						<C3Chart columns={this.state.rawData} chartType={this.state.chartType}/>
+						<dropdown.renderdropdown headers = {this.state.columnHeaders} updateDataFunction={this.updateData} selectedYVal="value2"/>
+						<Chart data={this.state.rawData} domain={this.state.domain} type="Bar"/>
+						<CChart columns={columns} chartType='bar'/>
 						<Puker data={this.state} />
 					</div>
 					

@@ -1,0 +1,67 @@
+/** { box-sizing: border-box; } 
+*//*body { background: #eee; } 
+p { text-align: center; } 
+button { margin-left: 1em; background: #159fff; border: none; padding: 0.5em 2em; color: white; text-transform: uppercase; } 
+button:hover { background: #0094fb; } */
+#chart { background: #fff; width: 100%; margin: 1em auto; } 
+
+.c3-axis-y text {
+   font-size:10px;
+}
+
+.c3-axis-y path {
+   fill: red;
+   display: none;
+ }
+.c3-axis-x path {
+   /*display: none;*/
+ }
+
+.c3 path, .c3 line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1px;
+}
+
+.c3-axis-x text {
+    font-size:10px;
+    fill:black;
+}
+
+/*-- Tooltip --*/
+
+.c3-tooltip {
+  border-collapse:collapse;
+  border-spacing:0;
+  background-color:#fff;
+  empty-cells:show;
+  -webkit-box-shadow: 7px 7px 12px -9px rgb(119,119,119);
+     -moz-box-shadow: 7px 7px 12px -9px rgb(119,119,119);
+          box-shadow: 7px 7px 12px -9px rgb(119,119,119);
+  opacity: 0.9;
+}
+.c3-tooltip tr {
+  border:1px solid #CCC;
+}
+.c3-tooltip th {
+  background-color: #aaa;
+  font-size:14px;
+  padding:2px 5px;
+  text-align:left;
+  color:#FFF;
+}
+.c3-tooltip td {
+  font-size:13px;
+  padding: 3px 6px;
+  background-color:#fff;
+  border-left:1px dotted #999;
+}
+.c3-tooltip td > span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+}
+.c3-tooltip td.value{
+  text-align: right;
+}

@@ -11,7 +11,8 @@ var getColumnHeaders = function (url, storedata) {
 var Dropdown = React.createClass({
 	getInitialState: function() {
 		return{
-			value:this.props.selectedYVal
+			value:this.props.selectedYVal,
+			selectedOption: this.props.selectedradiovar
 		}
 	},
     handleChange: function(event){
@@ -20,8 +21,13 @@ var Dropdown = React.createClass({
     },
     handleSubmit: function (event) {
     		event.preventDefault();
-            this.props.updateDataFunction(this.state.value);	
+            this.props.updateDataFunction(this.state.value, this.state.selectedOption);	
     },
+	handleOptionChange: function (changeEvent) {
+	  this.setState({
+	    selectedOption: changeEvent.target.value
+	  });
+	},
 	render: function() {
 		return (
 			<div className="row">
@@ -34,6 +40,14 @@ var Dropdown = React.createClass({
 		          		}.bind(this))}
 					</select> 
 				</label>
+
+				<div className="radio">
+		          		{this.props.radiovals.map(function(listValue, i){
+		            			return <div key={i} > <input type="radio" checked={this.state.selectedOption === listValue} onChange={this.handleOptionChange} value={listValue} key={i}/>{listValue} <br/></div>;
+		          		}.bind(this))}
+
+		        </div>
+
 		        <input type="submit" value="Submit" /> 
 		      </form>
 			</div>
@@ -41,6 +55,7 @@ var Dropdown = React.createClass({
 		)
 }
 })
+
 
 module.exports = {
 	getColumnHeaders: getColumnHeaders,
