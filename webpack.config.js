@@ -22,6 +22,9 @@ module.exports = {
       {test: /\.css$/,loader: "style-loader!css-loader"}
     ]
   },
-  plugins: [HtmlWebpackPluginConfig]
+  plugins: [HtmlWebpackPluginConfig],
+  node: {
+  fs: "empty"
+  }
   
 }

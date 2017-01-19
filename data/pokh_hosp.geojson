@@ -1,0 +1,1948 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2017-01-19T04:29:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/152604442",
+      "properties": {
+        "@id": "way/152604442",
+        "amenity": "hospital",
+        "building": "yes",
+        "capacity:beds": "100",
+        "email": "hospitalfishtail@gmail.com",
+        "emergency": "yes",
+        "emergency_service": "ambulance",
+        "facility:icu": "yes",
+        "facility:nicu": "yes",
+        "facility:operation_theatre": "yes",
+        "facility:ventilator": "yes",
+        "facility:x-ray": "yes",
+        "name": "Fishtail Hospital And Research Centre",
+        "name:ne": "फिस्टेल हस्पिटल एड रिसर्च सेन्टर",
+        "operator:type": "private",
+        "personnel:count": "136",
+        "phone": "061-527553, 528999",
+        "source": "Field Survey",
+        "website": "www.fishtailhospital.com.np"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9898791,
+              28.2261031
+            ],
+            [
+              83.9898846,
+              28.2256682
+            ],
+            [
+              83.9904043,
+              28.2256618
+            ],
+            [
+              83.9904037,
+              28.2257693
+            ],
+            [
+              83.9901886,
+              28.225763
+            ],
+            [
+              83.99019,
+              28.2257879
+            ],
+            [
+              83.9901562,
+              28.22579
+            ],
+            [
+              83.9901614,
+              28.2259574
+            ],
+            [
+              83.990197,
+              28.2259922
+            ],
+            [
+              83.9901852,
+              28.2260898
+            ],
+            [
+              83.9898791,
+              28.2261031
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/204127848",
+      "properties": {
+        "@id": "way/204127848",
+        "alt_name": "Manipal Teaching Hospital",
+        "amenity": "hospital",
+        "capacity:beds": "750",
+        "email": "mtc@manipal.edu.np",
+        "emergency": "yes",
+        "emergency:services": "ambulance",
+        "facility:icu": "yes",
+        "facility:nicu": "yes",
+        "facility:operating_theatre": "yes",
+        "facility:ventilator": "yes",
+        "facility:x-ray": "yes",
+        "name": "Manipal College of Medical Sciences",
+        "name:ne": "मनिपाल हस्पिटल",
+        "operator:type": "private",
+        "personnel:count": "854",
+        "phone": "061-526416, 526420",
+        "website": "www.manipal.edu.np"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9971521,
+              28.2353442
+            ],
+            [
+              83.9978283,
+              28.2354864
+            ],
+            [
+              83.9984747,
+              28.2356069
+            ],
+            [
+              83.9982615,
+              28.2361032
+            ],
+            [
+              83.9972382,
+              28.2371216
+            ],
+            [
+              83.995907,
+              28.2382264
+            ],
+            [
+              83.9955213,
+              28.2379908
+            ],
+            [
+              83.9949161,
+              28.2379358
+            ],
+            [
+              83.9947488,
+              28.2372914
+            ],
+            [
+              83.9943371,
+              28.236395
+            ],
+            [
+              83.9947471,
+              28.2361091
+            ],
+            [
+              83.9953203,
+              28.2359812
+            ],
+            [
+              83.9959224,
+              28.2362805
+            ],
+            [
+              83.9958905,
+              28.2349596
+            ],
+            [
+              83.9965489,
+              28.2348743
+            ],
+            [
+              83.9967769,
+              28.2347089
+            ],
+            [
+              83.9971822,
+              28.2347563
+            ],
+            [
+              83.9972895,
+              28.2347727
+            ],
+            [
+              83.9973777,
+              28.2348176
+            ],
+            [
+              83.9971521,
+              28.2353442
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/239081179",
+      "properties": {
+        "@id": "way/239081179",
+        "addr:city": "Pokhara",
+        "addr:street": "Nagdhunga",
+        "amenity": "hospital",
+        "capacity:beds": "100",
+        "emergency_service": "ambulance",
+        "facility:icu": "yes",
+        "facility:nicu": "yes",
+        "facility:operation_theatre": "yes",
+        "facility:ventilator": "yes",
+        "facility:x-ray": "yes",
+        "name": "Fewa City Hospital",
+        "name:ne": "फेवा सिटी होस्पितल",
+        "operator:type": "private",
+        "personal:count": "225",
+        "phone": "532685/532686/538225",
+        "source": "field visit"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9817594,
+              28.2063225
+            ],
+            [
+              83.9820532,
+              28.2066528
+            ],
+            [
+              83.981674,
+              28.2069192
+            ],
+            [
+              83.9819972,
+              28.2072584
+            ],
+            [
+              83.9818283,
+              28.207356
+            ],
+            [
+              83.9811948,
+              28.2067087
+            ],
+            [
+              83.9817594,
+              28.2063225
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/239083427",
+      "properties": {
+        "@id": "way/239083427",
+        "addr:city": "Pokhara",
+        "addr:street": "Naya Bazar",
+        "amenity": "hospital",
+        "capacity:bed": "606",
+        "email": "ceo@gmc.edu.np",
+        "emergency": "yes",
+        "emergency_service": "yes",
+        "facility:icu": "yes",
+        "facility:nicu": "yes",
+        "facility:operating_theatre": "yes",
+        "facility:ventilator": "yes",
+        "facility:x-ray": "yes",
+        "name": "Gandaki Medical college",
+        "name:ne": "गण्डकी मेडिकल कलेज",
+        "note": "Dental,Cancer,Skin Disease,ENT,ECG,MRI,NICU,Picu",
+        "opening_hours": "8:00-16:00",
+        "operator:type": "private",
+        "personnel:count": "822",
+        "phone": "061 538595, 538598",
+        "source": "Field visit",
+        "start_date": "2067",
+        "website": "www.gmc.edu.np"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9871803,
+              28.21153
+            ],
+            [
+              83.9867946,
+              28.2109262
+            ],
+            [
+              83.9875992,
+              28.2105161
+            ],
+            [
+              83.9882472,
+              28.2109852
+            ],
+            [
+              83.9871803,
+              28.21153
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/288156775",
+      "properties": {
+        "@id": "way/288156775",
+        "addr:postcode": "33700",
+        "amenity": "hospital",
+        "capacity:beds": "350",
+        "email": "wrhpokh@gmail.com",
+        "emergency": "yes",
+        "facility:icu": "yes",
+        "facility:nicu": "yes",
+        "facility:operating_theatre": "yes",
+        "facility:ventilator": "yes",
+        "facility:x-ray": "yes",
+        "name": "Western Regional Hospital",
+        "name:ne": "पस्चिमान्चल क्षेत्रिय अस्पताल",
+        "note": "ICU-12, NICU-20,",
+        "operator:type": "governament",
+        "personnel:count": "691",
+        "website": "http://www.pahs.gov.np"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9964758,
+              28.2113118
+            ],
+            [
+              83.9981971,
+              28.2115475
+            ],
+            [
+              83.999737,
+              28.2118709
+            ],
+            [
+              83.9992964,
+              28.2127689
+            ],
+            [
+              83.9989248,
+              28.2131242
+            ],
+            [
+              83.9982442,
+              28.2137748
+            ],
+            [
+              83.9980757,
+              28.2140976
+            ],
+            [
+              83.9977585,
+              28.2139471
+            ],
+            [
+              83.9974133,
+              28.2137656
+            ],
+            [
+              83.9967125,
+              28.2136032
+            ],
+            [
+              83.9967783,
+              28.2126994
+            ],
+            [
+              83.9963831,
+              28.2121541
+            ],
+            [
+              83.9963211,
+              28.2120343
+            ],
+            [
+              83.9963103,
+              28.2119454
+            ],
+            [
+              83.9963095,
+              28.2118419
+            ],
+            [
+              83.9964758,
+              28.2113118
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/306487064",
+      "properties": {
+        "@id": "way/306487064",
+        "addr:city": "Pokhara",
+        "addr:street": "New Road",
+        "amenity": "hospital",
+        "capacity:beds": "50",
+        "email": "padmanursing@gmail.com",
+        "emergency": "yes",
+        "emergency_service": "ambulance",
+        "name": "Padhma Nursing Homes",
+        "name:ne": "पध्म नर्सिङ्ग होम्स",
+        "operator:type": "private",
+        "personnel:count": "83",
+        "phone": "+977 61 520159, 523048",
+        "source": "Field visit",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9866393,
+              28.2194844
+            ],
+            [
+              83.9866411,
+              28.2194934
+            ],
+            [
+              83.9866863,
+              28.2194864
+            ],
+            [
+              83.9866968,
+              28.2195394
+            ],
+            [
+              83.9866588,
+              28.2195452
+            ],
+            [
+              83.9866682,
+              28.2195928
+            ],
+            [
+              83.986713,
+              28.219586
+            ],
+            [
+              83.9867387,
+              28.2197162
+            ],
+            [
+              83.9863913,
+              28.2197695
+            ],
+            [
+              83.9863794,
+              28.2197089
+            ],
+            [
+              83.9864047,
+              28.219705
+            ],
+            [
+              83.9863883,
+              28.2196218
+            ],
+            [
+              83.9863693,
+              28.2195258
+            ],
+            [
+              83.986398,
+              28.2195214
+            ],
+            [
+              83.9865059,
+              28.2195048
+            ],
+            [
+              83.9866393,
+              28.2194844
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/311900679",
+      "properties": {
+        "@id": "way/311900679",
+        "amenity": "hospital",
+        "capacity:beds": "51",
+        "email": "heh@ntc.net.np",
+        "fax": "+977-(061)-460352",
+        "name": "Himalaya Eye Hospital",
+        "name:ne": "हिमालयन आँखा अस्पताल",
+        "note": "6 special deluxe cabin",
+        "operator:type": "NGO",
+        "personnel:count": "100",
+        "phone": "+977-(061)-461168, 460458, 463156",
+        "source": "Field visit",
+        "website": "www.heh.org.np"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9761926,
+              28.1901001
+            ],
+            [
+              83.9764823,
+              28.1899913
+            ],
+            [
+              83.9771958,
+              28.18984
+            ],
+            [
+              83.9780223,
+              28.1894514
+            ],
+            [
+              83.9783443,
+              28.1898659
+            ],
+            [
+              83.9786227,
+              28.1902987
+            ],
+            [
+              83.9780685,
+              28.190848
+            ],
+            [
+              83.977952,
+              28.1909506
+            ],
+            [
+              83.977008,
+              28.1915847
+            ],
+            [
+              83.9769597,
+              28.1916131
+            ],
+            [
+              83.9765306,
+              28.1909559
+            ],
+            [
+              83.9762892,
+              28.1904027
+            ],
+            [
+              83.9761926,
+              28.1901001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/369214248",
+      "properties": {
+        "@id": "way/369214248",
+        "addr:street": "Meera Hotel Lane",
+        "amenity": "hospital",
+        "building": "yes",
+        "name": "CIWEC Hospital",
+        "name:ne": "सी वीक ास्पातल"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9590529,
+              28.2091722
+            ],
+            [
+              83.9590784,
+              28.2093338
+            ],
+            [
+              83.9590507,
+              28.2093372
+            ],
+            [
+              83.9590547,
+              28.2093628
+            ],
+            [
+              83.9589855,
+              28.2093713
+            ],
+            [
+              83.9589803,
+              28.2093385
+            ],
+            [
+              83.9589543,
+              28.2093417
+            ],
+            [
+              83.9589387,
+              28.209243
+            ],
+            [
+              83.9589299,
+              28.2091872
+            ],
+            [
+              83.9590529,
+              28.2091722
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/405415268",
+      "properties": {
+        "@id": "way/405415268",
+        "addr:city": "Pokhara",
+        "addr:street": "Bagaletole",
+        "amenity": "hospital",
+        "building": "yes",
+        "building:levels": "2",
+        "capacity:beds": "29",
+        "email": "info@lakecityhospital.org",
+        "emergency": "yes",
+        "emergency_service": "ambulance",
+        "facility:icu": "yes",
+        "facility:operating_theatre": "yes",
+        "facility:ventilator": "yes",
+        "facility:x-ray": "yes",
+        "name": "Lakecity Hospital & Critical Care",
+        "phone": "61-533303,441000",
+        "website": "http://www.lakecityhospital.org/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9836423,
+              28.2209189
+            ],
+            [
+              83.98359,
+              28.2208096
+            ],
+            [
+              83.9838424,
+              28.2207159
+            ],
+            [
+              83.9838947,
+              28.2208252
+            ],
+            [
+              83.9836423,
+              28.2209189
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/413558758",
+      "properties": {
+        "@id": "way/413558758",
+        "amenity": "hospital",
+        "building": "yes",
+        "capacity:beds": "38",
+        "email": "regionalhospital0@gmail.com",
+        "emergency": "yes",
+        "facility:icu": "yes",
+        "facility:operating_theatre": "yes",
+        "facility:ventilator": "yes",
+        "name": "Regional Hospital Pvt. Ltd",
+        "name:ne": "रिजनल होसपिटल प्रा. लि",
+        "note": "services - x-ray, operation threatre, ventilator",
+        "operator:type": "private",
+        "personnel:count": "57",
+        "phone": "+977 61 533231"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9754442,
+              28.2141846
+            ],
+            [
+              83.9752693,
+              28.2142504
+            ],
+            [
+              83.9752514,
+              28.2142135
+            ],
+            [
+              83.9753149,
+              28.2141896
+            ],
+            [
+              83.975302,
+              28.214163
+            ],
+            [
+              83.9754134,
+              28.2141211
+            ],
+            [
+              83.9754442,
+              28.2141846
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/414776142",
+      "properties": {
+        "@id": "way/414776142",
+        "amenity": "hospital",
+        "building": "yes",
+        "capacity:beds": "100",
+        "email": "info@kaskisewahospital.com",
+        "emergency": "yes",
+        "emergency_service": "ambulance",
+        "facility:icu": "yes",
+        "facility:nicu": "yes",
+        "facility:operating_theatre": "yes",
+        "facility:ventilator": "yes",
+        "name": "Kaski Sewa Hospital And Research Center PVT. LTD",
+        "name:ne": "कास्की सेवा हस्पिटल तथा अनुसन्धान केन्द्र",
+        "operator:type": "private",
+        "personnel:count": "124",
+        "website": "kaskisewahospital.com"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              84.0008305,
+              28.213059
+            ],
+            [
+              84.0009976,
+              28.2131465
+            ],
+            [
+              84.0008476,
+              28.2134125
+            ],
+            [
+              84.0005891,
+              28.2133297
+            ],
+            [
+              84.0006359,
+              28.2132161
+            ],
+            [
+              84.0006775,
+              28.2132294
+            ],
+            [
+              84.0007411,
+              28.2130752
+            ],
+            [
+              84.0006566,
+              28.2130481
+            ],
+            [
+              84.000673,
+              28.2130085
+            ],
+            [
+              84.0008305,
+              28.213059
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/416528321",
+      "properties": {
+        "@id": "way/416528321",
+        "addr:street": "Ram Path",
+        "amenity": "hospital",
+        "building": "yes",
+        "building:levels": "3",
+        "email": "parklandhospital@gmail.com",
+        "name": "Parkland Hospital Pvt. Ltd.",
+        "name:ne": "पार्क लाण्ड होस्पिटल प्रावेट",
+        "phone": "061-431830/ 431930",
+        "source": "Field visit"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              84.0012184,
+              28.2046388
+            ],
+            [
+              84.0013245,
+              28.2041527
+            ],
+            [
+              84.0014694,
+              28.2041693
+            ],
+            [
+              84.0014117,
+              28.204563
+            ],
+            [
+              84.0013352,
+              28.2046009
+            ],
+            [
+              84.0012184,
+              28.2046388
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/417137701",
+      "properties": {
+        "@id": "way/417137701",
+        "amenity": "hospital",
+        "building": "yes",
+        "capacity:bed": "34",
+        "emergency": "yes",
+        "emergency_service": "yes",
+        "facility:icu": "yes",
+        "facility:operating_theatre": "yes",
+        "facility:x-ray": "yes",
+        "facilityn:nicu": "yes",
+        "name": "Charak Memorial Hospital",
+        "note": "ECG,Echo,X-Ray,Gynecology,Radiology",
+        "opening_hours": "8:00-18:00",
+        "personnel:count": "100",
+        "phone": "061532778",
+        "start_date": "08:00-18:00"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9859988,
+              28.2108942
+            ],
+            [
+              83.9859469,
+              28.2108274
+            ],
+            [
+              83.9862038,
+              28.2106724
+            ],
+            [
+              83.9862557,
+              28.2107392
+            ],
+            [
+              83.9859988,
+              28.2108942
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/418029147",
+      "properties": {
+        "@id": "way/418029147",
+        "amenity": "hospital",
+        "building": "yes",
+        "capacity:beds": "55",
+        "emergency": "yes",
+        "emergency_service": "ambulance",
+        "facility:icu": "yes",
+        "facility:operating_theatre": "yes",
+        "facility:x-ray": "yes",
+        "name": "Sahara Hospital",
+        "name:ne": "साहारा अस्पताल",
+        "operator:type": "private",
+        "personnel:count": "45",
+        "phone": "61-539858"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.983103,
+              28.2314147
+            ],
+            [
+              83.9833176,
+              28.2313674
+            ],
+            [
+              83.983349,
+              28.2314446
+            ],
+            [
+              83.9831344,
+              28.2314942
+            ],
+            [
+              83.983103,
+              28.2314147
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/423278568",
+      "properties": {
+        "@id": "way/423278568",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "name": "Metro City Hospital"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9813732,
+              28.2117857
+            ],
+            [
+              83.9815662,
+              28.2117114
+            ],
+            [
+              83.9817829,
+              28.2116277
+            ],
+            [
+              83.981829,
+              28.2117374
+            ],
+            [
+              83.9818672,
+              28.2119973
+            ],
+            [
+              83.9816056,
+              28.2120922
+            ],
+            [
+              83.9815508,
+              28.2119949
+            ],
+            [
+              83.9815178,
+              28.2118421
+            ],
+            [
+              83.981511,
+              28.2118317
+            ],
+            [
+              83.9813956,
+              28.2118542
+            ],
+            [
+              83.9813732,
+              28.2117857
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/426287124",
+      "properties": {
+        "@id": "way/426287124",
+        "amenity": "hospital",
+        "beds": "15",
+        "email": "abcrehabilitation@gamil.com",
+        "name": "AB Care And Rehabilitation Center",
+        "name:ne": "ए.बि. सुधार केन्द्र",
+        "note": "Physiotherapy and Occupational Therapy Hospital",
+        "personnel:count": "17",
+        "phone": "+97761412230",
+        "website": "www.abcrehabilitation.com"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9825062,
+              28.2386835
+            ],
+            [
+              83.9823908,
+              28.2385477
+            ],
+            [
+              83.9825303,
+              28.2385193
+            ],
+            [
+              83.9825217,
+              28.2383816
+            ],
+            [
+              83.982702,
+              28.2382984
+            ],
+            [
+              83.9827181,
+              28.238192
+            ],
+            [
+              83.9829246,
+              28.2382724
+            ],
+            [
+              83.9828897,
+              28.2384402
+            ],
+            [
+              83.9829702,
+              28.238615
+            ],
+            [
+              83.9827824,
+              28.2386824
+            ],
+            [
+              83.9825062,
+              28.2386835
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/426287879",
+      "properties": {
+        "@id": "way/426287879",
+        "amenity": "hospital",
+        "capacity:beds": "15",
+        "email": "bghospital2069@gmail.com",
+        "emergency": "yes",
+        "name": "BG Hospital and Research Center",
+        "name:ne": "बि जि हस्पिटल एंड रिसर्च सेन्टर",
+        "note": "Psychiatric Hospital, High Care ward for patients",
+        "operator:type": "private",
+        "personnel:count": "53",
+        "phone": "166 061 52111",
+        "website": "www.bghospital.com"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              84.0033964,
+              28.2159262
+            ],
+            [
+              84.0032582,
+              28.2158154
+            ],
+            [
+              84.003143,
+              28.2157187
+            ],
+            [
+              84.003067,
+              28.2157197
+            ],
+            [
+              84.003048,
+              28.2156387
+            ],
+            [
+              84.0031917,
+              28.2156195
+            ],
+            [
+              84.0034886,
+              28.2155171
+            ],
+            [
+              84.0036052,
+              28.2157677
+            ],
+            [
+              84.0033964,
+              28.2159262
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/426289934",
+      "properties": {
+        "@id": "way/426289934",
+        "alt_name": "Kantipur Dental Hospital",
+        "amenity": "hospital",
+        "email": "kdhpkr@hotmail.com",
+        "emergency": "yes",
+        "name": "Kantipur Institute of Health Science",
+        "name:ne": "कान्तिपुर इस्न्तीतुत अफ हेल्थ साइस्",
+        "operator:type": "private",
+        "personnel:count": "20",
+        "phone": "+977 61 530725, 538364",
+        "source": "Field visit",
+        "website": "kantipurkdh.edu.np"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9846722,
+              28.2136778
+            ],
+            [
+              83.9845723,
+              28.2135596
+            ],
+            [
+              83.984632,
+              28.2135411
+            ],
+            [
+              83.9846112,
+              28.213481
+            ],
+            [
+              83.9848244,
+              28.2133995
+            ],
+            [
+              83.9848345,
+              28.2134077
+            ],
+            [
+              83.9849089,
+              28.213374
+            ],
+            [
+              83.984921,
+              28.2133486
+            ],
+            [
+              83.9849793,
+              28.2133031
+            ],
+            [
+              83.9850048,
+              28.2133132
+            ],
+            [
+              83.9852502,
+              28.213205
+            ],
+            [
+              83.9853065,
+              28.2132878
+            ],
+            [
+              83.9849203,
+              28.2134828
+            ],
+            [
+              83.9849216,
+              28.2135147
+            ],
+            [
+              83.9846722,
+              28.2136778
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/426290896",
+      "properties": {
+        "@id": "way/426290896",
+        "amenity": "hospital",
+        "capacity:beds": "25",
+        "emergency": "no",
+        "name": "Sai Archana Hospital",
+        "name:ne": "साही अर्चना हस्पिटल",
+        "operator:type": "private",
+        "personnel:count": "25",
+        "phone": "061-541587"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9977232,
+              28.21906
+            ],
+            [
+              83.9976722,
+              28.2190505
+            ],
+            [
+              83.9976709,
+              28.2188732
+            ],
+            [
+              83.9981483,
+              28.2189099
+            ],
+            [
+              83.9981041,
+              28.2192112
+            ],
+            [
+              83.9977232,
+              28.21906
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/426558850",
+      "properties": {
+        "@id": "way/426558850",
+        "amenity": "hospital",
+        "capacity:beds": "10",
+        "email": "arogya2069@gmail.com",
+        "name": "Aaragyodham Homiopathy Hospital",
+        "name:ne": "आरोग्यधाम होमियोप्याथि हस्पिटल",
+        "operator:type": "private",
+        "personnel:count": "22",
+        "phone": "+977 61 432242, 430242"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9933383,
+              28.2059887
+            ],
+            [
+              83.9933257,
+              28.2058887
+            ],
+            [
+              83.9933393,
+              28.2058239
+            ],
+            [
+              83.9935486,
+              28.2058249
+            ],
+            [
+              83.9935836,
+              28.2058757
+            ],
+            [
+              83.9935904,
+              28.2059963
+            ],
+            [
+              83.9935384,
+              28.2060143
+            ],
+            [
+              83.9934241,
+              28.2059923
+            ],
+            [
+              83.9933383,
+              28.2059887
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/426952936",
+      "properties": {
+        "@id": "way/426952936",
+        "amenity": "hospital",
+        "capacity:bed": "50",
+        "email": "pchospital2071@gmail.com",
+        "emergency": "yes",
+        "facility:icu": "yes",
+        "name": "Pashchimanchal Community Hospital",
+        "name:ne": "पश्चिमान्चल समुदायक अस्पताल",
+        "note": "Echo,ERCP,ECG,Maternity&Child Care,General Surgery",
+        "operator:type": "community",
+        "personnel:count": "66",
+        "phone": "061-438888",
+        "source": "Field visit",
+        "start_date": "2059"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9879282,
+              28.2087635
+            ],
+            [
+              83.9883981,
+              28.2085543
+            ],
+            [
+              83.988623,
+              28.2089403
+            ],
+            [
+              83.9882901,
+              28.2091086
+            ],
+            [
+              83.9883198,
+              28.2091674
+            ],
+            [
+              83.9882035,
+              28.2092197
+            ],
+            [
+              83.9879282,
+              28.2087635
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/429583811",
+      "properties": {
+        "@id": "way/429583811",
+        "addr:place": "Mahendrapool",
+        "alt_name": "Om Hospital",
+        "amenity": "hospital",
+        "capacity:beds": "65",
+        "email": "omhos@cnet.wlink.com.np",
+        "emergency": "yes",
+        "emergency_service": "ambulance",
+        "facility:icu": "yes",
+        "facility:operation_theatre": "yes",
+        "facility:x-ray": "yes",
+        "name": "OM Hospital Dignostic and Research Centre",
+        "name:ne": "ओम हस्पिटल",
+        "note": "ECG;USG. Free service: every 1st,2nd and 3rd saturday every month",
+        "opening_hours": "09:00-16:00",
+        "operator:type": "private",
+        "personnel:count": "56",
+        "phone": "061-534566, 534577, 534007",
+        "source": "Field visit",
+        "start_date": "2045"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9901076,
+              28.2228923
+            ],
+            [
+              83.9897898,
+              28.2229035
+            ],
+            [
+              83.9897616,
+              28.2227795
+            ],
+            [
+              83.9899471,
+              28.2227167
+            ],
+            [
+              83.9900895,
+              28.2226973
+            ],
+            [
+              83.9901076,
+              28.2228923
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/437425696",
+      "properties": {
+        "@id": "way/437425696",
+        "amenity": "hospital",
+        "capacity:beds": "25",
+        "contact:phone": "061-400055",
+        "emergency": "yes",
+        "facility:icu": "no",
+        "facility:operating_theatre": "no",
+        "facility:x-ray": "no",
+        "name": "Hemja Hospital and Research Center",
+        "name:ne": "हेमजा होसपिटल एंड रिसर्च सेन्टर",
+        "operator:type": "private",
+        "personnel:count": "26"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9344019,
+              28.2776704
+            ],
+            [
+              83.9344288,
+              28.2778228
+            ],
+            [
+              83.9341847,
+              28.2778723
+            ],
+            [
+              83.9341271,
+              28.2777389
+            ],
+            [
+              83.9342586,
+              28.2776885
+            ],
+            [
+              83.9341662,
+              28.2774673
+            ],
+            [
+              83.9342814,
+              28.2774142
+            ],
+            [
+              83.9344019,
+              28.2776704
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/439145408",
+      "properties": {
+        "@id": "way/439145408",
+        "addr:city": "Pokhara",
+        "addr:street": "Batulechaur",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "name": "Maternity Child Friendship Hospital",
+        "name:ne": "मत्रिसिसु मितेरी हस्पिटल"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9812534,
+              28.2584122
+            ],
+            [
+              83.9813084,
+              28.2579303
+            ],
+            [
+              83.9814613,
+              28.2575263
+            ],
+            [
+              83.982616,
+              28.2580756
+            ],
+            [
+              83.9819803,
+              28.2583839
+            ],
+            [
+              83.9815511,
+              28.258554
+            ],
+            [
+              83.9812239,
+              28.2586485
+            ],
+            [
+              83.9812534,
+              28.2584122
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/449184056",
+      "properties": {
+        "@id": "way/449184056",
+        "alt_name": "Hariyo Kharka Hospital",
+        "amenity": "hospital",
+        "capacity:beds": "66",
+        "email": "clinical.pmelo@kaskinepal.inf.org",
+        "name": "Green Pasture",
+        "operator:type": "NGO",
+        "personnel:count": "111",
+        "phone": "+977 61 430342",
+        "source": "Field visit",
+        "website": "www.inf.org"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9893515,
+              28.1934593
+            ],
+            [
+              83.9884456,
+              28.1933818
+            ],
+            [
+              83.9878994,
+              28.1932825
+            ],
+            [
+              83.9877355,
+              28.1932488
+            ],
+            [
+              83.9873507,
+              28.1930238
+            ],
+            [
+              83.987313,
+              28.1930027
+            ],
+            [
+              83.9871735,
+              28.1927391
+            ],
+            [
+              83.9871273,
+              28.192547
+            ],
+            [
+              83.9868818,
+              28.1920902
+            ],
+            [
+              83.9870086,
+              28.191907
+            ],
+            [
+              83.9876024,
+              28.1913953
+            ],
+            [
+              83.9878317,
+              28.1911944
+            ],
+            [
+              83.9886517,
+              28.1908036
+            ],
+            [
+              83.9894289,
+              28.1906317
+            ],
+            [
+              83.9899118,
+              28.1907807
+            ],
+            [
+              83.9899145,
+              28.1923918
+            ],
+            [
+              83.9899416,
+              28.1926771
+            ],
+            [
+              83.9899966,
+              28.1934159
+            ],
+            [
+              83.9897873,
+              28.1935446
+            ],
+            [
+              83.9893515,
+              28.1934593
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/449193813",
+      "properties": {
+        "@id": "way/449193813",
+        "amenity": "hospital",
+        "capacity:beds": "10",
+        "email": "familyhospital@gmail.com",
+        "name": "Family Homiopathy Hospital",
+        "name:ne": "फेमिली होमियोप्याथि हस्पिटल",
+        "operator:type": "private",
+        "personnel:count": "10",
+        "phone": "+977 61 432604",
+        "source": "Field visit"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9933656,
+              28.2062512
+            ],
+            [
+              83.9933576,
+              28.206058
+            ],
+            [
+              83.9934923,
+              28.2060615
+            ],
+            [
+              83.993495,
+              28.2062489
+            ],
+            [
+              83.9933656,
+              28.2062512
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/449297307",
+      "properties": {
+        "@id": "way/449297307",
+        "amenity": "hospital",
+        "capacity:beds": "37",
+        "email": "modelhospital@yahoo.com",
+        "emergency": "yes",
+        "emergency_service": "ambulance",
+        "facility:icu": "yes",
+        "facility:operating_theatre": "yes",
+        "facility:x-ray": "yes",
+        "name": "Kaski Model Hospital",
+        "name:ne": "कास्की मोडेल हस्पिटल",
+        "operator:type": "private",
+        "personnel:count": "66",
+        "phone": "+977 61 527542, 539803",
+        "source": "Field visit"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9866232,
+              28.2212734
+            ],
+            [
+              83.9867527,
+              28.2212731
+            ],
+            [
+              83.9867709,
+              28.2213615
+            ],
+            [
+              83.9867821,
+              28.2213994
+            ],
+            [
+              83.986818,
+              28.2214872
+            ],
+            [
+              83.9867615,
+              28.2214886
+            ],
+            [
+              83.9866914,
+              28.2214977
+            ],
+            [
+              83.98665,
+              28.2213622
+            ],
+            [
+              83.9866232,
+              28.2212734
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/449298476",
+      "properties": {
+        "@id": "way/449298476",
+        "amenity": "hospital",
+        "capacity:beds": "25",
+        "emergency": "yes",
+        "facility:icu": "yes",
+        "facility:operating_theatre": "yes",
+        "name": "Pokhara Hospital and Research Centre",
+        "name:ne": "पोखरा होस्पितल एंड रेसेअर्च",
+        "note": "Neuropsychiatry,Physican,,Cardiologist",
+        "operator:type": "private",
+        "personnel:count": "48",
+        "source": "Field visit"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9922253,
+              28.2068729
+            ],
+            [
+              83.9924268,
+              28.2068892
+            ],
+            [
+              83.9924232,
+              28.2069191
+            ],
+            [
+              83.9924377,
+              28.2069476
+            ],
+            [
+              83.9924251,
+              28.2071754
+            ],
+            [
+              83.992173,
+              28.207166
+            ],
+            [
+              83.9922253,
+              28.2068729
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/449301810",
+      "properties": {
+        "@id": "way/449301810",
+        "amenity": "hospital",
+        "capacity:beds": "15",
+        "name": "Spark B and D Hospital",
+        "name:ne": "स्पार्क बी एंड डी हस्पिटल",
+        "note": "physiotherapy and Paralysis Rehabilitation Centre",
+        "operator:type": "private",
+        "personnel:count": "23",
+        "phone": "+977 61 521408",
+        "source": "Field visit",
+        "website": "sparkhealth.com.np"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9834679,
+              28.2117993
+            ],
+            [
+              83.9835872,
+              28.2120038
+            ],
+            [
+              83.9833941,
+              28.2120948
+            ],
+            [
+              83.9833244,
+              28.212005
+            ],
+            [
+              83.9831903,
+              28.2120711
+            ],
+            [
+              83.9831313,
+              28.2119872
+            ],
+            [
+              83.9834679,
+              28.2117993
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/451814624",
+      "properties": {
+        "@id": "way/451814624",
+        "addr:housenumber": "1",
+        "addr:street": "Rameshwor Marg",
+        "amenity": "hospital",
+        "capacity:beds": "60",
+        "email": "namastehospital@gmail.com",
+        "emergency": "yes",
+        "name": "Namaste Hospital and Research Center",
+        "name:ne": "नमस्ते अस्पताल एन्ड अनुसन्धान सेन्टर",
+        "operator:type": "private",
+        "personnel:count": "95",
+        "phone": "+977 61 466438, 466439",
+        "source": "Field visit",
+        "website": "www.namsatehospital.com"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.9721141,
+              28.1930437
+            ],
+            [
+              83.9722341,
+              28.1931321
+            ],
+            [
+              83.9719532,
+              28.1933904
+            ],
+            [
+              83.9718624,
+              28.1932567
+            ],
+            [
+              83.9721141,
+              28.1930437
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4180402814",
+      "properties": {
+        "@id": "node/4180402814",
+        "amenity": "hospital",
+        "name": "Lekhnath City Polyclinic",
+        "name:ne": "लेखनाथ सिटि पोलीक्लिनिक"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.0310722,
+          28.189725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4490334027",
+      "properties": {
+        "@id": "node/4490334027",
+        "addr:city": "Lekhanath",
+        "addr:street": "Rithepani",
+        "amenity": "hospital",
+        "name": "GMC Basic Science",
+        "operator": "Rabeendra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.0514085,
+          28.1719715
+        ]
+      }
+    }
+  ]
+}

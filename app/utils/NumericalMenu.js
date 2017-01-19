@@ -16,6 +16,11 @@ var Numerical = React.createClass({
 			numvar2: this.props.selectedTwo
 		}
 	},
+	handleOptionChange: function (event) {
+	  this.setState({
+	    selectedOption: event.target.value
+	  });
+	},
     handleChangeOne: function(event){
     	console.log("Hi My")
     	// var selectedVar = (this.props.headers[event.target.value]);
@@ -59,7 +64,14 @@ var Numerical = React.createClass({
 							</select> 
 						</label>
 					</div>					
+				  	<div className="col-md-12">
+					<label>
+			          		{this.props.radiovals.map(function(listValue, i){
+			            			return <span key={i} > <input type="radio" checked={this.state.selectedOption === listValue} onChange={this.handleOptionChange} value={listValue} key={i}/>{" " + listValue.toUpperCase() + " CHART "}</span>;
+			          		}.bind(this))}
 
+			        </label>
+			        </div>
 		        		<input className="btn btn-large btn-success pull-right "type="submit" value="Submit" />
 					</form>
 				</div>

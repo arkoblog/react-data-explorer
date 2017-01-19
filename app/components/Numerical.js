@@ -40,7 +40,7 @@ var Numerical = React.createClass({
 		// d3Loaders.csvLoader("data/dummy.csv","var","value2", this.getdata)
 		// console.log("Myarog",arogya);
 		// console.log("My state",this.state)
-		var radiovals = ['line','bar','spline','area', 'area-spline', 'step', 'area-step'];
+		var radiovals = ['scatter', 'line'];
 		return(
 				<div className="row">
 					<div className="jumbotron">
@@ -54,7 +54,7 @@ var Numerical = React.createClass({
 					<div className="jumbotron col-md-12" style = {styles.transparentBg}>
 						<h3>Numerical inputs</h3>
 						<hr/>
-						<NumericalMenu.Numerical headers = {this.state.columnHeaders} selectedOne = 'value2' selectedTwo='value3' updateDataFunction={this.updateData}/>
+						<NumericalMenu.Numerical radiovals = {radiovals} headers = {this.state.columnHeaders} selectedOne = 'value2' selectedTwo='value3' updateDataFunction={this.updateData}/>
 						<C3Chart.Scatter id = "chart2" columns={this.state.chartData}/>
 						<Puker data={this.state} />
 					</div>

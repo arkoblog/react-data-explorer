@@ -18,6 +18,7 @@ var Home = React.createClass({
 
 					<div className="row">
 						<h4>This is where my content stays!</h4>
+
 					</div>
 
 				</div>
