@@ -5,38 +5,59 @@ var axios = require('axios');
 var L = require('leaflet');
 var turf = require('turf');
 var Puker = require('../utils/Puker');
-var GeoJsonCluster = require ('react-geojson-cluster');
+// var GeoJsonCluster = require ('react-geojson-cluster');
 var ReactDOM = require('react-dom');
 
+
+
 var Livemap = React.createClass({
-	addPoints: function(url) {
+	getInitialState: function () {
+		return {
+			url: this.props.url,
+			data: []
+		}
+	},
+	convertPolygonsToPoints: function (data) {
+		var newdata =L.geoJson(data,{onEachFeature: function(feature,layer){
+		    if (feature.geometry.type === 'Polygon') {
+		        var centroid = turf.centroid(feature);
+		        var lon = centroid.geometry.coordinates[0];
+		        var lat = centroid.geometry.coordinates[1];
+		        var coord = [Number(lat.toFixed(10)),Number(lon.toFixed(10))];
+			    feature.geometry = {
+			        coordinates: coord,
+			        type: "Point"
+			    };
+		    } else if (feature.geometry.type === 'Point'){
+		    	// console.log(feature.geometry.coordinates)
+		    	var lon = feature.geometry.coordinates[0]
+		    	var lat = feature.geometry.coordinates[1]
+		    	var coord = [Number(lat.toFixed(10)),Number(lon.toFixed(10))];
+		    	feature.geometry = {
+			        coordinates: coord,
+			        type: "Point"
+			    }
+		    }
+			}
+		});
+		L.extend(newdata.properties, data.properties);
+		console.log("ConvertoPoints:",data)
+		return data;
+	},
+	loadMap: function(url) {
 		axios.get(url).then(function(response){
-			// console.log("My response",response.data);
-			var newdata =L.geoJson(response.data,{onEachFeature: function(feature,layer){
-		                        if (feature.geometry.type === 'Polygon') {
-		                            // console.log('Polygon detected');
-		                            var centroid = turf.centroid(feature);
-		                            var lon = centroid.geometry.coordinates[0];
-        		                    var lat = centroid.geometry.coordinates[1];
-        		                    var coord = [Number(lat.toFixed(10)),Number(lon.toFixed(10))];
-        		                    // console.log(lon,lat);
-								      feature.geometry = {
-								        coordinates: coord,
-								        type: "Point"
-								      };
-		                        }
-								}
-							});
-					L.extend(newdata.properties, response.data.properties);
-			// console.log("Other response", response.data)
+			var mydata = this.convertPolygonsToPoints(response.data);
+			console.log("mydata",mydata)
 			coords = []
-			response.data.features.map(function(feature, i){coords.push({"coordinates":[feature.geometry.coordinates[0],feature.geometry.coordinates[1]], "properties":feature.properties})})
-			this.addMarkers(coords);
+			mydata.features.map(function(feature, i){
+			coords.push({"coordinates":[feature.geometry.coordinates[0],feature.geometry.coordinates[1]], "properties":feature.properties})})
+			// this.addMarkers(coords);
+			console.log("coords",coords)
+			this.setState({data:coords}, this.updateMap)
 		}.bind(this))
 	},
 	addMarkers: function(coords) {
-		// console.log(coords[0])
-		var greenIcon = L.icon({
+		var Icon = L.icon({
 		    iconUrl: 'data/marker2.png',
 		    shadowUrl: 'data/leaf-shadow.png',
 		    iconSize:     [17, 20], // size of the icon
@@ -45,18 +66,26 @@ var Livemap = React.createClass({
 		    shadowAnchor: [4, 62],  // the same for the shadow
 		    popupAnchor:  [-1, -12] // point from which the popup should open relative to the iconAnchor
 		});
-		
-		// console.log("MyMap",this.map);
+		console.log("My Coordinates", coords[1]);
 		coords.map(function(coord, i){
-			return L.marker(coord.coordinates, {icon: greenIcon})
+			// console.log(coord.coordinates,i, coord.properties["name"]);
+			return L.marker(coord.coordinates, {icon: Icon})
 					.addTo(this.map)
-					.bindPopup(coord.properties.name)
+					.bindPopup(JSON.stringify(coord.properties["name"])+ i);
+
 			}.bind(this))
 
 	},
     componentDidMount: function() {
-    	// console.log(ReactDOM.findDOMNode(this));
-        var map = this.map = L.map(ReactDOM.findDOMNode(this), {
+    	this.loadMap(this.state.url);
+    },
+    componentWillUnmount: function() {
+        this.map.off('click', this.onMapClick);
+        this.map = null;
+    },
+    updateMap: function() {
+    		// console.log("update1",this.state.data);
+    	    var map = this.map = L.map(ReactDOM.findDOMNode(this), {
             minZoom: 2,
             layers: [
                 L.tileLayer(
@@ -64,21 +93,19 @@ var Livemap = React.createClass({
                     {attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'})
             ],
             attributionControl: false,
-        });
-        this.addPoints(this.props.url);
-        map.on('click', this.onMapClick);
-        map.setView([28.207, 83.992],13);
-    },
-    componentWillUnmount: function() {
-        this.map.off('click', this.onMapClick);
-        this.map = null;
+        	});
+        	map.setView([28.207, 83.992],13);
+        	this.addMarkers(this.state.data);
+
+        	// var markerClusters = L.markerClusterGroup();
+        	// this.map.addLayer(markerClusters);
     },
     onMapClick: function() {
         // Do some wonderful map things...
     },
     render: function() {
         return (
-            <div className='map' style={{height: "250px"}}></div>
+            <div className='map' style={{height: "500px"}}></div>
         );
     }
 });
@@ -105,7 +132,7 @@ var Maps = React.createClass({
 
 					<div className="row">
 						<h4>This is where my content stays!</h4>
-						<Livemap url = "data/pokh_hosp.geojson"></Livemap>
+						<Livemap url = "data/pokh_banks.geojson"></Livemap>
 					</div>
 					
 				</div>
@@ -114,3 +141,31 @@ var Maps = React.createClass({
 })
 
 module.exports = Maps;
+
+var TagStatistics = function(jsondata) {
+
+
+					var json = jsondata
+					var ln = jsondata.length
+					var obj = {};
+
+
+
+					for (var i = 0, j = ln; i < j; i++) {
+						var hospital = (json[i].properties)
+						var keys = Object.keys(hospital)
+						for (var k = 0, l = keys.length; k < l; k++) {
+							console.log(keys[k])
+							   if (obj[keys[k]]) {
+							      obj[keys[k]]++;
+							   }
+							   else {
+							      obj[keys[k]] = 1;
+							   } 
+						}
+					}
+
+
+					console.log(JSON.stringify(obj));
+
+}

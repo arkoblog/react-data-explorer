@@ -20,23 +20,20 @@ var Categorical = React.createClass({
 		// this.setState({})
 	},
     handleChange: function(event){
-    	console.log("Hi")
     	var selectedHeader = (this.props.headers[event.target.value]);
         this.setState({value: selectedHeader, selected: event.target.value});
-    },
-    handleSubmit: function (event) {
-	    		// event.preventDefault();
-            this.props.updateDataFunction(this.state.value, this.state.selectedOption);	
+        this.props.updateDataFunction(selectedHeader, this.state.selectedOption);	
     },
 	handleOptionChange: function (event) {
 	  this.setState({
 	    selectedOption: event.target.value
 	  });
+	  this.props.updateDataFunction(this.state.value, event.target.value);	
 	},
 	render: function() {
 		return (
 			<div className="row">
-			  <form onSubmit={this.handleSubmit}>
+			  <form>
 			  	<div className="col-md-12">
 			        <label>
 			        	<select onChange={this.handleChange} value={this.state.selected}>
@@ -55,8 +52,6 @@ var Categorical = React.createClass({
 
 		        </label>
 		        </div>
-
-		        <input className="btn btn-large btn-success pull-right "type="submit" value="Submit" /> 
 		      </form>
 			</div>
 		)
